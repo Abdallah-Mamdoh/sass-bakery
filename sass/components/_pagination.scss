@@ -1,0 +1,21 @@
+.welcome__pagination{
+    position: absolute;
+    bottom: 50px;
+    left: 47%;
+    @include flex(row,space-between);
+    width: 65px;
+    &__dot{
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        cursor: pointer;
+        &:hover{
+            .welcome__pagination__dot__outer__inner{
+                background-color: $white-color;
+            }
+        }
+    }
+}
+.activated{
+    background-color: $white-color;
+}

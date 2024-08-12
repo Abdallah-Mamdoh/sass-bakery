@@ -1,0 +1,17 @@
+.header__nav{
+    width: 85%;
+    @include flex(row,end);
+    padding-top: 10px;
+    &__ul{
+        @include flex(row,end);
+        width: 70%;
+        list-style-type: none;
+        li{
+            margin-right: 30px;
+            :hover{
+                @include eleHover($main-color,$white-color)
+            }
+
+        }
+    }
+}

@@ -1,0 +1,63 @@
+// mixin
+@mixin eleHover($color: white, $bg-color: $btn-color, $border-color: $btn-color ) {
+  color: $color;
+  background-color: $bg-color;
+  transition: 0.3s all ease-in-out;
+  border-color:$border-color ;
+}
+
+@mixin font($color, $size, $family, $weight) {
+  color: $color;
+  font: {
+    size: $size;
+    family: $family, sans-serif;
+    weight: $weight;
+  }
+}
+
+@mixin after-before($color, $width, $height:2px){
+  content: '';
+  background-color: $color;
+  height:$height;
+  width: $width;
+  position: absolute;
+  bottom: -12px;
+}
+
+@mixin flex($direction: row, $justify){
+  display:flex;
+  flex-direction:$direction ;
+  justify-content:$justify ;
+}
+
+@mixin after-dot($color, $width){
+  content: '';
+  background-color: $text-color;
+  height: 2px;
+  border-radius: 50%;
+  width: 50px;
+  position: absolute;
+}
+
+@mixin small-circle($width,$height,$color,$border){
+  width: $width;
+  height: $height;
+  background-color: $color;
+  border-radius: 50%;
+  border:$border;
+  background-size: cover;
+  overflow: hidden;;
+  transition: 0.3s all ease-in-out;
+}
+
+@mixin form($width,$padding){
+  width:$width;
+  padding:$padding;
+  border: 1px solid rgba($color: $text-color, $alpha: 0.3);
+  transition: 0.4s all ease-in-out;
+  margin-bottom: 25px;
+  &:focus{
+    outline: none;
+    border: 1px solid rgba($color: $text-color, $alpha: 1);
+}
+}

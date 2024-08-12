@@ -1,0 +1,865 @@
+.header__btn, .offer__btn {
+  border: 2px solid #555555;
+  background-color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.orderNow__form__btn, .bakery__card__btn {
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 4px;
+  background-color: #ebb576;
+  color: #ffffff;
+  text-decoration: none;
+}
+.orderNow__form__btn:hover, .bakery__card__btn:hover {
+  border: 2px solid #555555;
+  color: #ebb576;
+  background-color: #ffffff;
+  transition: 0.3s all ease-in-out;
+  border-color: #ebb576;
+}
+
+.card--font {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #555555;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.card__content--font {
+  color: #696969;
+  font-size: 13px;
+  font-family: "Open sans", sans-serif;
+  font-weight: 400;
+}
+
+.card__content__price--font {
+  color: #ebb576;
+  font-size: 16px;
+  font-family: "Open sans", sans-serif;
+  font-weight: 700;
+}
+
+.title--font {
+  text-transform: uppercase;
+  color: #555555;
+  font-size: 18px;
+  font-family: "Open sans", sans-serif;
+  font-weight: 700;
+}
+
+.services__text--font {
+  line-height: 25px;
+  color: #696969;
+  font-size: 14px;
+  font-family: "Open sans", sans-serif;
+  font-weight: 400;
+}
+
+.btn--font {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #555555;
+  font-size: 13px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.header__nav--font {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #555555;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.active {
+  color: #ebb576;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.welcome__message--main-font {
+  text-transform: uppercase;
+  color: #ebb576;
+  font-size: 22px;
+  font-family: "Open sans", sans-serif;
+  font-weight: 600;
+}
+
+.welcome__message--middle-font {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 31px;
+  font-family: "Open sans", sans-serif;
+  font-weight: 600;
+}
+
+.welcome__message--end-font {
+  margin-top: 25px;
+  opacity: 0.8;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Open sans", sans-serif;
+  font-weight: 400;
+}
+
+.bakery__btn--font {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 13px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.offer__menu--font {
+  text-decoration: none;
+  color: #696969;
+  font-size: 16px;
+  font-family: "Open sans", sans-serif;
+  font-weight: 400;
+}
+
+.numbers__bar__card--font {
+  color: #ffffff;
+  font-size: 48px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.numbers__bar__card--font-word {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Open sans", sans-serif;
+  font-weight: 500;
+}
+
+.ourClients__card__info--text-font {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Open sans", sans-serif;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.ourClients__card__info--name-font {
+  text-transform: uppercase;
+  margin: 10px 0 50px 0;
+  color: #ebb576;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.orderNow__form--font {
+  color: #696969;
+  font-size: 14px;
+  font-family: "Open sans", sans-serif;
+  font-weight: 400;
+}
+
+.orderNow__form--btn-font {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 13px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.footer__info__contact__details--font {
+  color: #DDDDDD;
+  font-size: 14px;
+  font-family: "Open sans", sans-serif;
+  font-weight: 400;
+}
+
+.copyright--font {
+  color: #AAAAAA;
+  font-size: 12px;
+  font-family: "Open sans", sans-serif;
+  font-weight: 400;
+}
+
+.footer__info__arrow--font {
+  color: #696969;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.offer__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  width: 50%;
+  margin-bottom: 50px;
+}
+.offer__menu a {
+  position: relative;
+  margin-right: 18px;
+  padding-right: 22px;
+  transition: 0.3s all ease-in-out;
+}
+.offer__menu a:hover {
+  color: #ebb576;
+}
+.offer__menu__after::after {
+  content: "";
+  background-color: #696969;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  right: 0px;
+  top: 10px;
+}
+.offer__cards {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 24px;
+  margin-bottom: 50px;
+}
+.offer__button {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.appear {
+  color: #ebb576;
+}
+
+.header__nav {
+  width: 85%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  padding-top: 10px;
+}
+.header__nav__ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  width: 70%;
+  list-style-type: none;
+}
+.header__nav__ul li {
+  margin-right: 30px;
+}
+.header__nav__ul li :hover {
+  color: #ebb576;
+  background-color: #ffffff;
+  transition: 0.3s all ease-in-out;
+  border-color: #555555;
+}
+
+.welcome {
+  position: relative;
+  width: 100%;
+}
+.welcome__message__info {
+  width: 40%;
+}
+.welcome__message__arrow {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  transition: 0.3s all ease-in-out;
+  cursor: pointer;
+}
+.welcome__message__arrow i {
+  color: white;
+  font-size: 20px;
+  margin-top: 12px;
+}
+.welcome__message__arrow:hover {
+  background-color: #ffffff;
+}
+.welcome__message__arrow:hover i {
+  color: #ebb576;
+}
+
+.numbers {
+  margin: 60px 0 50px 0;
+  position: relative;
+}
+.numbers__bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  width: 75%;
+  bottom: 30%;
+  left: 12%;
+}
+
+.ourChefs {
+  text-align: center;
+}
+.ourChefs__view {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  height: 400px;
+  width: 100%;
+}
+
+.ourClients {
+  position: relative;
+  margin: 80px 0px;
+  height: 500px;
+  overflow: hidden;
+}
+
+.orderNow {
+  text-align: center;
+}
+
+.orderNow__form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 50px 0px;
+  flex-wrap: wrap;
+}
+.orderNow__form__text {
+  width: 48.5%;
+  padding: 15px 10px;
+  border: 1px solid rgba(105, 105, 105, 0.3);
+  transition: 0.4s all ease-in-out;
+  margin-bottom: 25px;
+}
+.orderNow__form__text:focus {
+  outline: none;
+  border: 1px solid dimgray;
+}
+.orderNow__form__products {
+  width: 100%;
+  padding: 15px 10px;
+  border: 1px solid rgba(105, 105, 105, 0.3);
+  transition: 0.4s all ease-in-out;
+  margin-bottom: 25px;
+}
+.orderNow__form__products:focus {
+  outline: none;
+  border: 1px solid dimgray;
+}
+.orderNow__form__message {
+  width: 100%;
+  padding: 10px 10px;
+  border: 1px solid rgba(105, 105, 105, 0.3);
+  transition: 0.4s all ease-in-out;
+  margin-bottom: 25px;
+  height: 100px;
+}
+.orderNow__form__message:focus {
+  outline: none;
+  border: 1px solid dimgray;
+}
+
+.services {
+  text-align: center;
+}
+.services__info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.services__info__card__icon {
+  width: 55%;
+  height: 140px;
+  border-radius: 50%;
+  background-color: #ebb576;
+  transition: 0.5s all ease-in-out;
+}
+.services__info__card__icon img {
+  width: 80px;
+  margin-top: 30px;
+}
+
+.footer {
+  height: 330px;
+  overflow: hidden;
+  position: relative;
+}
+.footer__info {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  top: 0px;
+}
+.footer__info__arrow {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid #696969;
+  background-size: cover;
+  overflow: hidden;
+  transition: 0.3s all ease-in-out;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 50px;
+  right: 30px;
+  transition: 0.3s all ease-in-out;
+}
+.footer__info__arrow:hover {
+  color: #ebb576;
+}
+.footer__info__contact__details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 60%;
+}
+.footer__info__contact__details__text {
+  position: relative;
+}
+.footer__info__contact__details__text::after {
+  content: "";
+  background-color: #ebb576;
+  height: 15px;
+  width: 2px;
+  position: absolute;
+  bottom: -12px;
+  right: -25px;
+  bottom: 3px;
+}
+
+.card {
+  display: flex;
+  width: 50%;
+  padding: 0 15px;
+}
+.card img {
+  border-radius: 50%;
+  margin-right: 20px;
+  width: 130px;
+  height: 130px;
+}
+.card p {
+  line-height: 24px;
+}
+.card__price {
+  color: #ebb576;
+}
+
+.services__info__card {
+  width: 23%;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.services__info__card:hover .services__info__card__icon {
+  background-color: #555555;
+}
+
+.bakery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+.bakery img {
+  width: 50%;
+}
+.bakery__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  width: 50%;
+  padding: 50px 70px;
+  background-color: #f7f7f7;
+}
+.bakery__card p {
+  margin-bottom: 15px;
+}
+
+.numbers__bar__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.numbers__bar__card__num {
+  margin-bottom: 30px;
+  position: relative;
+}
+.numbers__bar__card__num::after {
+  content: "";
+  background-color: #ffffff;
+  height: 2px;
+  width: 30px;
+  position: absolute;
+  bottom: -12px;
+  top: 80px;
+  left: 40%;
+}
+
+.ourChefs__view__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 1s all ease-in-out;
+  align-items: center;
+  padding: 30px 22px;
+  width: 23%;
+  background-color: #f7f7f7;
+}
+.ourChefs__view__card:hover .ourChefs__view__card__pic__social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: static;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(105, 105, 105, 0.5);
+}
+.ourChefs__view__card:hover .ourChefs__view__card__pic__social__circle {
+  width: 40px;
+  height: 40px;
+  background-color: #ddd;
+  border-radius: 50%;
+  border: none;
+  background-size: cover;
+  overflow: hidden;
+  transition: 0.3s all ease-in-out;
+  display: block;
+  text-align: center;
+  margin: 0px 7px;
+}
+.ourChefs__view__card:hover .ourChefs__view__card__pic__social__circle i {
+  margin-top: 30%;
+  color: #696969;
+}
+.ourChefs__view__card:hover .ourChefs__view__card__pic__social__circle:hover {
+  background-color: #ebb576;
+}
+.ourChefs__view__card:hover .ourChefs__view__card__pic__social__circle:hover i {
+  color: #ffffff;
+}
+
+.ourClients__card {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.ourClients__card__info {
+  width: 70%;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  left: 14%;
+  top: 20%;
+}
+.ourClients__card__info__text {
+  position: relative;
+}
+.ourClients__card__info__text::after {
+  content: "";
+  background-color: #ffffff;
+  height: 2px;
+  width: 33px;
+  position: absolute;
+  bottom: -12px;
+  left: 48.5%;
+  bottom: -20px;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 50px 0;
+  position: relative;
+}
+.title::before {
+  content: "";
+  background-color: #ddd;
+  height: 2px;
+  width: 150px;
+  position: absolute;
+  bottom: -12px;
+}
+.title::after {
+  content: "";
+  background-color: #ebb576;
+  height: 2px;
+  width: 50px;
+  position: absolute;
+  bottom: -12px;
+}
+
+.bakery__card__title {
+  margin-bottom: 40px;
+  position: relative;
+}
+.bakery__card__title::after {
+  content: "";
+  background-color: #ebb576;
+  height: 2px;
+  width: 50px;
+  position: absolute;
+  bottom: -12px;
+  left: 0px;
+}
+
+.offer__btn:hover {
+  color: white;
+  background-color: #555555;
+  transition: 0.3s all ease-in-out;
+  border-color: #555555;
+}
+
+.header__btn:hover {
+  color: #ebb576;
+  background-color: #ffffff;
+  transition: 0.3s all ease-in-out;
+  border-color: #ebb576;
+}
+
+.bakery__card__btn {
+  padding: 8px 20px;
+  margin-top: 25px;
+}
+
+.orderNow__form__btn {
+  padding: 8px 20px;
+  border: none;
+  cursor: pointer;
+  margin-left: 45%;
+}
+
+.welcome__message {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  text-align: center;
+  width: 95%;
+  margin: auto;
+  bottom: 45%;
+  left: 2%;
+}
+
+.welcome__pagination__dot__outer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+}
+.welcome__pagination__dot__outer__inner {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  transition: 0.3s all ease-in-out;
+}
+
+.footer__info__contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0 22px 0;
+  height: 200px;
+}
+.footer__info__contact__social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 70%;
+}
+.footer__info__contact__social__icon {
+  width: 45px;
+  height: 45px;
+  background-color: #555555;
+  border-radius: 50%;
+  border: none;
+  background-size: cover;
+  overflow: hidden;
+  transition: 0.3s all ease-in-out;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+.footer__info__contact__social__icon:hover {
+  color: #ebb576;
+}
+
+.welcome__img img {
+  width: 100%;
+}
+
+.header img {
+  width: 110px;
+}
+
+.ourChefs__view__card__firstChef {
+  width: 90%;
+  height: 60%;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 2px solid rgba(105, 105, 105, 0.1);
+  background-size: cover;
+  overflow: hidden;
+  transition: 0.3s all ease-in-out;
+  background-image: url("https://preview.milingona.co/themes/bakery/catalog/wp-content/uploads/2017/12/team-1.jpg");
+}
+
+.ourChefs__view__card__secondChef {
+  width: 90%;
+  height: 60%;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 2px solid rgba(105, 105, 105, 0.1);
+  background-size: cover;
+  overflow: hidden;
+  transition: 0.3s all ease-in-out;
+  background-image: url("https://preview.milingona.co/themes/bakery/catalog/wp-content/uploads/2017/12/team-3.jpg");
+}
+
+.ourChefs__view__card__thirdChef {
+  width: 90%;
+  height: 60%;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 2px solid rgba(105, 105, 105, 0.1);
+  background-size: cover;
+  overflow: hidden;
+  transition: 0.3s all ease-in-out;
+  background-image: url("https://preview.milingona.co/themes/bakery/catalog/wp-content/uploads/2017/12/team-2.jpg");
+}
+
+.ourChefs__view__card__fourthChef {
+  width: 90%;
+  height: 60%;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 2px solid rgba(105, 105, 105, 0.1);
+  background-size: cover;
+  overflow: hidden;
+  transition: 0.3s all ease-in-out;
+  background-image: url("https://preview.milingona.co/themes/bakery/catalog/wp-content/uploads/2017/12/team-4.jpg");
+}
+
+.ourChefs__view__card__pic {
+  position: relative;
+}
+
+.ourChefs__view__card__pic__social {
+  position: absolute;
+  bottom: -10px;
+}
+
+.ourClients img {
+  width: 100%;
+  position: absolute;
+  top: -140px;
+}
+.ourClients__card__info__pic {
+  width: 90px;
+  height: 90px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 3px solid rgba(105, 105, 105, 0.2);
+  background-size: cover;
+  overflow: hidden;
+  transition: 0.3s all ease-in-out;
+  background-image: url("https://preview.milingona.co/themes/bakery/catalog/wp-content/uploads/2017/12/testimonial-1-150x150.jpg");
+}
+
+.sliderPics {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  overflow: hidden;
+}
+.sliderPics img {
+  transition: 0.3s all ease-in-out;
+  width: 16.667%;
+  height: 220px;
+}
+.sliderPics img:hover {
+  transform: scale(1.1);
+}
+
+.footer__info__contact img {
+  width: 10%;
+}
+
+.welcome__pagination {
+  position: absolute;
+  bottom: 50px;
+  left: 47%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 65px;
+}
+.welcome__pagination__dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.welcome__pagination__dot:hover .welcome__pagination__dot__outer__inner {
+  background-color: #ffffff;
+}
+
+.activated {
+  background-color: #ffffff;
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+}/*# sourceMappingURL=main.css.map */

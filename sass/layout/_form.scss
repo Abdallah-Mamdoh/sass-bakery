@@ -1,0 +1,15 @@
+.orderNow__form{
+    @include flex(row,space-between);
+    margin: 50px 0px;
+    flex-wrap: wrap;
+    &__text{
+        @include form(48.5%,15px 10px);
+    }
+    &__products{
+        @include form(100%,15px 10px);
+    }
+    &__message{
+        @include form(100%,10px 10px);
+        height: 100px;
+    }
+}

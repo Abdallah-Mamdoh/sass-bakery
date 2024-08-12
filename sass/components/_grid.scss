@@ -1,0 +1,49 @@
+.welcome__message{
+    @include flex(row,space-between);
+    align-items: center;
+    position: absolute;
+    text-align: center;
+    width: 95%;
+    margin: auto;
+    bottom: 45%;
+    left: 2%;
+}
+
+.welcome__pagination__dot__outer{
+    @include flex(row,center);
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border: 2px solid $white-color;
+    border-radius: 50%;
+    &__inner{
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        transition: 0.3s all ease-in-out;
+    }
+}
+
+.footer__info__contact{
+    @include flex(column,space-between);
+    align-items: center;
+    margin: 50px 0 22px 0;
+    height: 200px;
+    &__social{
+        @include flex(row,center);
+        width: 70%;
+        &__icon{
+            @include small-circle(45px,45px,$titles-color,none);
+            margin-right: 10px;
+            @include flex(row,center);
+            align-items: center;
+            text-decoration: none;
+            color: $white-color;
+            &:hover{
+                color: $main-color;
+            }
+        }
+    }
+}

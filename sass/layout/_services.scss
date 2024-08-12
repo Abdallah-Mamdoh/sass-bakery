@@ -1,0 +1,19 @@
+.services{
+    text-align: center;
+    &__info{
+        width: 100%;
+        @include flex(row,space-between);
+        margin-top: 50px;
+            &__card__icon{
+                width: 55%;
+                height: 140px;
+                border-radius: 50%;
+                background-color: $main-color;
+                transition: 0.5s all ease-in-out;
+                img{
+                    width: 80px;
+                    margin-top: 30px;
+                }
+            }
+    }
+}

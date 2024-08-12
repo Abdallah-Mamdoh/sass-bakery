@@ -1,0 +1,26 @@
+
+.offer__btn{
+    @extend %btn;
+    &:hover{
+        @include eleHover()
+    }
+}
+.header__btn{
+    @extend %btn;
+    &:hover{
+        @include eleHover($main-color,$white-color,$main-color)
+    }
+}
+
+.bakery__card__btn{
+    @extend %orangeBtn;
+    padding: 8px 20px;
+    margin-top: 25px;
+}
+.orderNow__form__btn{
+    @extend %orangeBtn;
+    padding: 8px 20px;
+    border: none;
+    cursor: pointer;
+    margin-left: 45%;
+}

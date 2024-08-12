@@ -1,0 +1,26 @@
+.welcome{
+    position: relative;
+    width: 100%;
+    &__message__info{
+        width: 40%;
+    }
+    &__message__arrow{
+        width: 50px;
+        height: 50px;
+        border: 2px solid $white-color;
+        border-radius: 50%;
+        transition: 0.3s all ease-in-out;
+        cursor: pointer;
+        i{
+            color: white;
+            font-size: 20px;
+            margin-top: 12px;
+        }
+        &:hover{
+            background-color: $white-color;
+            i{
+                color: $main-color;
+            }
+        }
+    }
+    }

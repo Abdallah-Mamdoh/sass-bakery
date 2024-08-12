@@ -1,0 +1,19 @@
+// placeholder
+%btn {
+  border: 2px solid $btn-color;
+  background-color: $white-color;
+  padding: 8px 16px;
+  border-radius: 4px;   
+}
+
+%orangeBtn {
+    width: fit-content;
+    border-radius: 4px; 
+    background-color: $main-color;
+    color: $white-color;
+    text-decoration: none;
+    &:hover{
+        border: 2px solid $btn-color;
+        @include eleHover($main-color,$white-color,$main-color);
+    }
+}

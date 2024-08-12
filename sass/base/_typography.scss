@@ -1,0 +1,99 @@
+.card--font{
+    text-transform: capitalize;
+    text-decoration: none;
+    @include font($titles-color, 16px,"Poppins", 600 );
+}
+
+.card__content--font{
+    @include font($text-color, 13px,"Open sans", 400 );
+}
+
+.card__content__price--font{
+    @include font($main-color, 16px,"Open sans", 700 );
+}
+
+.title--font {
+    text-transform: uppercase;
+    @include font($titles-color, 18px,"Open sans", 700 );
+}
+
+.services__text--font{
+    line-height: 25px;
+    @include font($text-color, 14px,"Open sans", 400 );
+}
+
+
+.btn--font{
+    text-transform: uppercase;
+    text-decoration: none;
+    @include font($btn-color, 13px,"Poppins", 700 );
+}
+
+.header__nav--font{
+    text-decoration: none;
+    text-transform: uppercase;
+    @include font($titles-color, 14px,"Poppins", 700 );
+}
+.active{
+    @include font($main-color, 14px,"Poppins", 700 );
+}
+.welcome__message--main-font{
+    text-transform: uppercase;
+    @include font($main-color, 22px,"Open sans", 600 );
+}
+.welcome__message--middle-font{
+    text-transform: uppercase;
+    @include font($white-color, 31px,"Open sans", 600 );
+}
+.welcome__message--end-font{
+    margin-top: 25px;
+    opacity: 0.8;
+    @include font($white-color, 16px,"Open sans", 400 );
+}
+
+.bakery__btn--font{
+    text-transform: uppercase;
+    text-decoration: none;
+    @include font($white-color, 13px,"Poppins", 700 );
+}
+
+.offer__menu--font{
+    text-decoration: none;
+    @include font($text-color, 16px,"Open sans", 400 );
+}
+
+.numbers__bar__card--font{
+    @include font($white-color, 48px,"Poppins", 500 );
+}
+.numbers__bar__card--font-word{
+    @include font($white-color, 16px,"Open sans", 500 );
+}
+.ourClients__card__info--text-font{
+    @include font($white-color, 16px,"Open sans", 500 );
+    line-height: 30px;
+}
+.ourClients__card__info--name-font{
+    text-transform: uppercase;
+    margin: 10px 0 50px 0;
+    @include font($main-color, 14px,"Poppins", 700 );
+}
+.orderNow__form--font{
+    @include font($text-color, 14px,"Open sans", 400 );
+}
+
+.orderNow__form--btn-font{
+    text-transform: uppercase;
+    @include font($white-color, 13px,"Poppins", 700 );
+}
+
+.footer__info__contact__details--font{
+    @include font($semi-grey, 14px,"Open sans", 400 );
+}
+.copyright--font{
+    @include font(#AAAAAA, 12px,"Open sans", 400 );
+}
+.footer__info__arrow--font{
+    color: $text-color;
+    text-decoration: none;
+    font-size: 1.5em;
+}

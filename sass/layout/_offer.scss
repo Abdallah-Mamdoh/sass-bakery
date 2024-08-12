@@ -1,0 +1,42 @@
+.offer{
+    &__menu{
+        @include flex(row,space-between);
+        margin: auto;
+        width: 50%;
+        margin-bottom: 50px;
+        a{
+            position: relative;
+            margin-right: 18px;
+            padding-right: 22px;
+            transition: 0.3s all ease-in-out;
+            &:hover{
+                color: $main-color;
+            }
+        }
+        &__after{
+            &::after{
+                content: '';
+                background-color: $text-color;
+                border-radius: 50%;
+                width: 5px;
+                height: 5px;
+                position: absolute;
+                right: 0px;
+                top: 10px;
+            }
+        }
+    }
+    &__cards{
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: $gap;
+        margin-bottom: 50px;
+    }
+    &__button{
+        text-align: center;
+        margin: 10px 0;
+    }
+}
+.appear{
+    color: $main-color;
+}

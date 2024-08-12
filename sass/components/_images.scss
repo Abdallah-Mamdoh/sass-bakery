@@ -1,0 +1,65 @@
+.welcome__img{
+        img{
+            width: 100%;
+        }
+    }
+
+.header img {
+            width: 110px;
+        }
+
+
+.ourChefs__view__card__firstChef{
+    @include small-circle(90%,60%,$white-color,2px solid rgba($color: $text-color, $alpha:0.1 ));
+    background-image: url("https://preview.milingona.co/themes/bakery/catalog/wp-content/uploads/2017/12/team-1.jpg");
+}
+.ourChefs__view__card__secondChef{
+    @include small-circle(90%,60%,$white-color,2px solid rgba($color: $text-color, $alpha:0.1 ));
+    background-image: url("https://preview.milingona.co/themes/bakery/catalog/wp-content/uploads/2017/12/team-3.jpg");
+}
+.ourChefs__view__card__thirdChef{
+    @include small-circle(90%,60%,$white-color,2px solid rgba($color: $text-color, $alpha:0.1 ));
+    background-image: url("https://preview.milingona.co/themes/bakery/catalog/wp-content/uploads/2017/12/team-2.jpg");
+}
+.ourChefs__view__card__fourthChef{
+    @include small-circle(90%,60%,$white-color,2px solid rgba($color: $text-color, $alpha:0.1 ));
+    background-image: url("https://preview.milingona.co/themes/bakery/catalog/wp-content/uploads/2017/12/team-4.jpg");
+}
+.ourChefs__view__card__pic{
+    position: relative;
+}
+.ourChefs__view__card__pic__social{
+    position: absolute;
+    bottom: -10px;
+}
+
+.ourClients{
+    img{
+        width: 100%;
+        position: absolute;
+        top: -140px;
+    }
+    &__card__info__pic{
+        @include small-circle(90px,90px,$white-color,3px solid rgba($color: $text-color, $alpha:0.2 ));
+        background-image: url("https://preview.milingona.co/themes/bakery/catalog/wp-content/uploads/2017/12/testimonial-1-150x150.jpg");
+    }
+}
+
+.sliderPics{
+    @include flex(row,center);
+    overflow: hidden;
+    img{
+        transition: 0.3s all ease-in-out;
+        width: 16.667%;
+        height: 220px;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+
+.footer__info__contact{
+    img{
+        width: 10%;
+    }
+}

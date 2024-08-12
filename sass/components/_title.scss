@@ -1,0 +1,20 @@
+.title{
+    @include flex(row,center);
+    margin: 50px 0;
+    position: relative;
+    &::before {
+        @include after-before($dash-color,150px);
+    }
+    &::after {
+        @include after-before($main-color,50px);
+    }
+}
+
+.bakery__card__title{
+    margin-bottom: 40px;
+    position: relative;
+    &::after {
+        @include after-before($main-color,50px);
+        left: 0px;
+    }
+}
